@@ -26,6 +26,8 @@ if (isset($_POST{"submit"})) {
         if (move_uploaded_file($tmp,"picture/$nn")){
             $_SESSION['picture']=$nn;
         }
+        header("location/profile.php");
 
     }
 }
+?>
