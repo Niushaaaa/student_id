@@ -15,7 +15,7 @@ if (isset($_POST{"submit"})) {
     $id_serial_number = $_POST['id_serial_number'];
     $_SESSION['id_serial_number'] = $id_serial_number;
     $subject = $_POST['subject '];
-    $_SESSION['subject '] = $subject;
+    $_SESSION['subject'] = $subject;
     $age = $_POST['age'];
     $_SESSION['age'] = $age;
 
