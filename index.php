@@ -31,3 +31,17 @@ if (isset($_POST{"submit"})) {
     }
 }
 ?>
+<form method="post" enctype="multipart/form-data">
+    <label>name:</label><br/>
+    <input type="text" name="name"><br/>
+    <label>last name:</label><br/>
+    <input type="text" name="last name"><br/>
+    <label>id serial number:</label><br/>
+    <input type="number" name="id_serial_number"><br/>
+    <label>subject:</label><br/>
+    <input type="text" name="subject"><br/>
+    <label>age:</label><br/>
+    <input type="number" name="age"><br/>
+    <input type="file" name="file">
+    <input type="submit" name="submit" value="run">
+</form>
