@@ -17,5 +17,15 @@ if (isset($_POST{"submit"})) {
     $subject = $_POST['subject '];
     $_SESSION['subject '] = $subject;
     $age = $_POST['age'];
-    if
+    $_SESSION['age'] = $age;
+
+
+    if (isset($_FILES["file"])){
+        $nn=$_FILES['file']['name'];
+        $tmp=$_FILES['file']['tmp_name'];
+        if (move_uploaded_file($tmp,"picture/$nn")){
+            $_SESSION['picture']=$nn;
+        }
+
+    }
 }
